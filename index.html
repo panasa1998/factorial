@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        margin:0;
+        padding: 0;
+    }
+</style>
+<body>
+    <div id="container">
+    <div id="main">
+        <h2>Factorial of given <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number</h2>
+        <input type="text" id="fact" placeholder="Enter a number">
+        <button id="factorial">Factorial</button>
+    </div>
+    </div>
+    <script>
+        let div1=document.getElementById("container")
+        div1.setAttribute("style","display:flex;justify-content:center;position:relative;top:50px")
+        let geth2=document.querySelector("h2")
+        geth2.setAttribute("style","text-shadow:1px 1px 3px red,1px 1px 5px red,1px 1px 10px orange;font-size:45px")
+        let main=document.getElementById("main")
+        main.setAttribute("style","border:1px solid none;height:500px;width:500px;display:grid;align-items:center;justify-content:center;background-color:aqua;border-radius:20px;")
+        main.style.boxShadow="2px 2px 3px 5px black"
+        main.style.backgroundImage='url("sea-bg.jpg")'
+        main.style.backgroundRepeat="no-repeat"
+        main.style.backgroundSize="cover"
+
+
+        let ip1=document.getElementById("fact")
+        ip1.setAttribute("style","height:60px;border-radius:15px;border:none;text-align:center;font-size:25px")
+
+        let btn1=document.getElementById("factorial")
+        btn1.setAttribute("style","border-radius:10px;height:50px;width:200px;margin-left:70px;background-color:black;color:aliceblue;font-size:20px")
+        btn1.addEventListener("click",()=>{
+            let num=Number(fact.value);
+            prod=1;
+            for(i=1;i<=num;i++){
+                prod*=i;
+            }
+            fact.value=prod;
+        })
+
+        
+    </script>
+    
+</body>
+</html>
